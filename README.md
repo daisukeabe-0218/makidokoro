@@ -1,5 +1,7 @@
 # makidokoro
 石巻名所紹介サイトの作成をしました。
+言語：HTML5,CSS3,jquery,PHP
+DB：mysql
 実装機能
 ・ユーザー登録機能
 ・ログイン機能
