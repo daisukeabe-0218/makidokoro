@@ -180,9 +180,7 @@ require('head.php');
             <div class="title">
                 <span class="badge"><?php echo sanitize($viewData['category']); ?></span>
                 <?php echo sanitize($viewData['name']); ?>
-                <i class="fa fa-heart icn-like js-click-like <?php if (isLike($_SESSION['user_id'], $viewData['id'])) {
-                                                                    echo 'active';
-                                                                } ?>" aria-hidden="true" data-productid="<?php echo sanitize($viewData['id']); ?>"></i>
+
             </div>
             <div class="product-img-container">
                 <div class="img-main">
@@ -201,6 +199,9 @@ require('head.php');
                 <div class="item-left">
                     <a href="index.php<?php echo appendGetParam(array('p_id')); ?>">&lt; 名所一覧に戻る</a>
                 </div>
+                <i class="fa fa-heart icn-like js-click-like <?php if (isLike($_SESSION['user_id'], $viewData['id'])) {
+                                                                    echo 'active';
+                                                                } ?>" aria-hidden="true" data-productid="<?php echo sanitize($viewData['id']); ?>"></i>
                 <form action="" method="post">
                     <!-- formタグを追加し、ボタンをinputに変更し、style追加 -->
                     <div class="item-right">
